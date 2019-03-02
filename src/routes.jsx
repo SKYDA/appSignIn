@@ -14,6 +14,11 @@ import Main from './containers/Main'
 
 import Home from './containers/home/Home'
 import Result from './containers/result/Result'
+import OrderDetail from './containers/orderDetail/OrderDetail'
+import OrderList from './containers/orderList/OrderList'
+import Auth from './containers/auth/Auth'
+import BookDetail from './containers/bookDetail/BookDetail'
+import StuReserve from './containers/stuReserve/StuReserve'
 
 const routes = [{
     path: '/',
@@ -22,12 +27,32 @@ const routes = [{
     childRoutes: [
         {
             path: 'home',
-            component: Home
+            component: Home,
         },
         {
-            path: 'result',
-            component: Result
-        }
+            path: 'detail',
+            component: OrderDetail,
+        },
+        {
+            path: 'list(/:role)',
+            component: OrderList,
+        },
+        {
+            path: 'result(/:type)',
+            component: Result,
+        },
+        {
+            path: 'auth',
+            component: Auth,
+        },
+        {
+            path: 'bookDetail/:role/:type(/:orderType)',
+            component: BookDetail,
+        },
+        {
+            path: 'reserve',
+            component: StuReserve,
+        },
     ]
 },
 ]

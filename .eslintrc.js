@@ -14,7 +14,7 @@ module.exports = {
     'rules': {
         'semi': [4, 'never'],
         'indent': [4],
-        'react/jsx-filename-extension': [0, { 'extensions': ['.js', '.jsx'] }],
+        // 'react/jsx-filename-extension': [0, { 'extensions': ['.js', '.jsx'] }],
         'jsx-a11y/no-static-element-interactions': 1,
         'react/jsx-indent-props': [4],
         'react/jsx-indent': [4],

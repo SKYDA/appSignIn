@@ -4,7 +4,6 @@ import {gray3, f30} from '../../styles/less/common.less';
 import classNames from 'classnames';
 
 import {Button, Toast, Card, Modal} from 'antd-mobile';
-
 class Room extends React.Component {
     render() {
         const {room, cancelRoom} = this.props;

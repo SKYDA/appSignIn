@@ -47,6 +47,8 @@ module.exports = {
         extensions: [ '.web.tsx', '.web.ts', '.web.jsx', '.web.js', '.ts', '.tsx', '.js', '.jsx', '.json'],
         alias: {
             Less: path.resolve(__dirname, '../src/styles/less'),
+            Components: path.resolve(__dirname, '../src/Components'),
+            Images: path.resolve(__dirname, '../src/images'),
         }
     },
 }
